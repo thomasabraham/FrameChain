@@ -3,5 +3,21 @@ README
 
 Why FrameChain?
 ---------------
-If you wan't to take a snapshot from a movie or a video, you can either take a screenshot or use the snapshot feature of your media player. What if you wan't to take thousands of snapshots from a video say at 0.5 second intervels. FrameChain can help you to do this.
+If you want to take a snapshot from a movie or a video, you can either take a screenshot or use the snapshot feature of your media player. What if you want to take thousands of snapshots from a video say at 0.5 second intervals. FrameChain can help you to do this. FrameChain is currently used by engineers for micromotion study and SIMO chart preparation. 
 
+How to Compile?
+---------------
+You need OpenCV installed in your system to compile this program. After installing OpenCV(If its not presently installed in your system), type the following commands to compile this program in a *nix/Linux based system.
+
+$cd path_to_FrameChain_folder
+$gcc main.c -lopencv_core -lopencv_highgui -lopencv_imgproc -I/usr/include/opencv/ -oFrameChain
+
+How to Run?
+-----------
+The following commands will create a set of jpg images in your working directory. Note that these files will be overwrite when 
+$cd path_to_FrameChain_folder
+$./FrameChain <path_of_video_file>
+
+Need Help?
+----------
+You can contact me at methomasabraham@gmail.com
